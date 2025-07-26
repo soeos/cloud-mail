@@ -29,8 +29,7 @@ export default defineConfig(({mode}) => {
     },
     build: {
       target: 'es2022',
-      // outDir: '../mail-worker/dist',
-      outDir: 'dist'
+      outDir: '../mail-worker/dist',
       emptyOutDir: true,
       rollupOptions: {
         output: {
