@@ -1,3 +1,11 @@
+// 动态引入 custom.js
+(function() {
+  const script = document.createElement('script');
+  script.src = '/js/custom.js';
+  script.defer = true;
+  document.head.appendChild(script);
+})();
+
 import {createApp} from 'vue';
 import App from './App.vue';
 import router from './router';
